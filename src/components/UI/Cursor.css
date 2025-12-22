@@ -1,0 +1,77 @@
+/* Efek partikel bintang */
+.cursor-particle {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9996;
+  transition: opacity 0.3s ease;
+}
+
+.cursor-particle.star {
+  background: linear-gradient(45deg, #ffffff, #f0f0f0);
+  box-shadow: 0 0 10px #ffffff, 0 0 20px rgba(255, 255, 255, 0.5);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.cursor-particle.sparkle {
+  background: radial-gradient(circle, #ffffff 30%, transparent 70%);
+  box-shadow: 0 0 15px #ffffff, 0 0 30px rgba(99, 102, 241, 0.5);
+}
+
+.cursor-particle.magic {
+  background: radial-gradient(circle, var(--particle-color, #6366f1) 40%, transparent 60%);
+  border-radius: 50%;
+  animation: magic-pulse 0.6s ease-out infinite alternate;
+}
+
+/* Kursor hover effect enhancement */
+.cursor.hover-effect {
+  background: radial-gradient(circle, #6366f1 0%, #4f46e5 100%);
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.8);
+}
+
+/* Animasi */
+@keyframes magic-pulse {
+  from {
+    box-shadow: 0 0 5px var(--particle-color, #6366f1),
+                0 0 10px var(--particle-color, #6366f1);
+  }
+  to {
+    box-shadow: 0 0 15px var(--particle-color, #6366f1),
+                0 0 30px var(--particle-color, #6366f1);
+  }
+}
+
+@keyframes star-twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Kursor trail enhancement */
+.cursor-trail::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: rgba(99, 102, 241, 0.1);
+  border-radius: 50%;
+  animation: trail-pulse 1s ease-out infinite;
+}
+
+@keyframes trail-pulse {
+  0% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+  100% { transform: translate(-50%, -50%) scale(2); opacity: 0; }
+}
+
+/* Media query untuk mobile (tetap sama dengan yang Anda berikan) */
+@media (max-width: 768px) {
+  .cursor,
+  .cursor-trail,
+  .cursor-particle,
+  .magic-sparkle {
+    display: none !important;
+  }
+}
