@@ -12,13 +12,12 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: "Weather PWA",
-    description: "Progressive Web App for weather forecasting with offline capabilities and push notifications.",
-    image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w-800&auto=format&fit=crop",
-    github: "https://github.com",
-    live: "https://demo.com",
+    title: "Ramalan Cuaca PWA",
+    description: "Aplikasi Web Progresif (PWA) untuk prakiraan cuaca dengan kemampuan luring (offline) dan notifikasi push.",
+    image: "/images",
+    github: "https://github.com/muhtadi97/weather-pwa",
+    live: "https://ramalan-cuaca-pwa.vercel.app/",
     category: "nextjs",
-    stars: 28,
     tech: ["Next.js", "PWA", "Weather API", "Service Workers", "CSS Modules"]
   },
   {
