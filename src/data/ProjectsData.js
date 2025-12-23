@@ -14,7 +14,7 @@ export const projectsData = [
     id: 2,
     title: "Ramalan Cuaca PWA",
     description: "Aplikasi Web Progresif (PWA) untuk prakiraan cuaca dengan kemampuan luring (offline) dan notifikasi push.",
-    image: "/images",
+    image: "/images/projek2.jpg",
     github: "https://github.com/muhtadi97/weather-pwa",
     live: "https://ramalan-cuaca-pwa.vercel.app/",
     category: "nextjs",
