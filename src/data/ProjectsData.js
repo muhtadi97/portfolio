@@ -6,7 +6,7 @@ export const projectsData = [
     description: "Website e-commerce modern dengan gambar dari Unsplash dan Icons8 yang dibangun menggunakan HTML, CSS, dan JavaScript murni.",
     image: "/images/projek1.jpg",
     github: "https://github.com/muhtadi97/e-commerce-luxeshop",
-    live: "https://projek1muhtadi.netlify.app/",
+    live: "https://e-commerce-luxeshop.vercel.app/",
     category: "javascript",
     tech: ["HTML5", "CSS3", "Vanilla JavaScript (ES6+)", "FontAwesome untuk ikon UI", "Google Fonts (Poppins & Montserrat)"]
   },
@@ -27,7 +27,7 @@ export const projectsData = [
     description: "Website lengkap untuk mengelola inventori barang dengan fitur CRUD, pencatatan barang masuk/keluar, statistik real-time yang bekerja dengan sempurna",
     image: "/images/projek3.jpg",
     github: "https://github.com/muhtadi97/inventory-system",
-    live: "https://projek3muhtadi.netlify.app/",
+    live: "https://inventory-system-bay-mu.vercel.app/",
     category: "javascript",
     tech: ["HTML5", "CSS3", "JavaScript ES6", "Font Awesome 6.4.0", "Google Fonts (Poppins)", "LocalStorage",]
   },
