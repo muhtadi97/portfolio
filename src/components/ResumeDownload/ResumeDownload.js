@@ -17,7 +17,7 @@ const ResumeDownload = () => {
 
       // Create download link
       const link = document.createElement('a');
-      link.href = '/resume.pdf';
+      link.href = '/CV - Mukhtadi Arijuddin.pdf';
       link.download = 'CV_Muhtadi_Arijuddin.pdf'; // Custom filename
       document.body.appendChild(link);
       link.click();
@@ -43,7 +43,7 @@ const ResumeDownload = () => {
     });
 
     // Open in new tab
-    window.open('/resume.pdf', '_blank', 'noopener,noreferrer');
+    window.open('/CV - Mukhtadi Arijuddin.pdf', '_blank', 'noopener,noreferrer');
   };
 
   const formatDate = (dateString) => {
