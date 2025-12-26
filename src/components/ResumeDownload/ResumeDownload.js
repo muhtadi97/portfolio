@@ -43,7 +43,7 @@ const ResumeDownload = () => {
     });
 
     // Open in new tab
-    window.open('/resume.pdf', '_blank', 'noopener,noreferrer');
+    window.open('/CV-Mukhtadi Arijuddin.pdf', '_blank', 'noopener,noreferrer');
   };
 
   const formatDate = (dateString) => {
