@@ -63,7 +63,7 @@ const Hero = () => {
   // Fungsi untuk download resume langsung
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/CV-Mukhtadi Arijuddin.pdf';
+    link.href = '/resume.pdf';
     link.download = 'Muhtadi_Arijuddin_CV.pdf';
     document.body.appendChild(link);
     link.click();
